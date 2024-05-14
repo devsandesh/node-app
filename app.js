@@ -11,9 +11,10 @@ const shopRoutes = require('./routes/shop');
 // const routes = require('./routes');
 const app = express();
 
-app.engine('handlebars', engine({defaultLayout: 'main-layout'}));
+// app.engine('handlebars', engine({defaultLayout: 'main-layout'}));
 // app.set('view engine', 'pug');
-app.set('view engine', 'handlebars');
+// app.set('view engine', 'handlebars');
+app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 app.use(bodyParser.urlencoded({extended: true}));
